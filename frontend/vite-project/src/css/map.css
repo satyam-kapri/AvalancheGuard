@@ -1,0 +1,16 @@
+.map {
+  height: 91vh;
+  width: 100vw;
+  position: relative;
+  top: 33px;
+  }
+  
+  .map-container {
+    height: 100%;
+    width: 100%;
+  }
+  .danger-moderate{
+    color: orange;
+    font-size: 1rem;
+    font-weight: 400;
+  }

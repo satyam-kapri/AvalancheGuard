@@ -1,0 +1,23 @@
+.navbar{
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    align-items: center;
+    background: #ffffff26;
+}
+.nav-elements{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin-right: 103px;
+    /* font-family: Kaushan Script; */
+}
+.logo{
+    margin-left: 146px;
+    display: flex;
+    align-items: center;
+}
