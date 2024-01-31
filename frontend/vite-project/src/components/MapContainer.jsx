@@ -4,13 +4,14 @@ import '../css/map.css'
 import { Button } from "@mui/material";
 import axios from 'axios';
 import ForecastDetails from "./forecastdetails";
+
 const MapContainer = () => {
   const [selectedMountain, setSelectedMountain] = useState(null);
   const [forecastdata,setforecastdata]=useState({});
   const [openforecast,setopenforecast]=useState(false);
   const [isloading,setisloading]=useState(false);
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey:'AIzaSyD2JFS0acRfjxcRskGNBEG_gQS--6XBtLs',
+    googleMapsApiKey:process.env.REACT_APP_GoogleMapsApiKey,
   });
   const center = useMemo(() => ({ lat: 30.7352, lng: 79.0669  }), []);
   const uttarakhandMountains = [
